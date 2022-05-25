@@ -1,12 +1,15 @@
 def fibonacci(n):
   flist = [0,1]
-  while (n>1):
+  if n == 0:
+    return 0
+  else:
+    while (n>1):
   # for num in flist:
   #   # length = len(flist)
-    newnum = flist[-2] + flist[-1]
-    flist.append(newnum)
-    n = n-1
-  print(int(flist[-1]))
+      newnum = flist[-2] + flist[-1]
+      flist.append(newnum)
+      n = n-1
+  return int(flist[-1])
 
 
 # print(fibonacci(0))
